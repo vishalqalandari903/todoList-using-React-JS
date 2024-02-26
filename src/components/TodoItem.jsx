@@ -61,7 +61,7 @@ function TodoItem({ todo }) {
       {/* Edit, Save Button */}
       <button
         id="save_todo_msg_btn"
-        className=" h-full aspect-square inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+        className=" h-full aspect-square inline-flex lg:h-8 lg:w-8 md:h-8 md:w-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
         onClick={() => {
           if (todo.completed) return;
 
