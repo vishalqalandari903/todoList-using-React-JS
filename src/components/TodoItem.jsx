@@ -39,7 +39,7 @@ function TodoItem({ todo }) {
     >
       <input
         type="checkbox"
-        className="cursor-pointer"
+        className="cursor-pointer todo_msg_checkbox"
         checked={todo.completed}
         onChange={() => {
           if (isTodoEditable) {
