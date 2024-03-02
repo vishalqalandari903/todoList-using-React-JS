@@ -17,7 +17,12 @@ function TodoItem({ todo }) {
   };
 
   const toggleCompleted = () => {
-    toggleComplete(todo.id, todoMsg);
+    if (todoMsg.trim() == "") {
+      setTodoMsg(todo.todo);
+      toggleComplete(todo.id, todo.todo);
+    } else {
+      toggleComplete(todo.id, todoMsg);
+    }
   };
 
   window.addEventListener("keydown", (e) => {
