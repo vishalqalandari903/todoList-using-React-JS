@@ -14,7 +14,6 @@ function App() {
   const updateTodo = (id, todo) => {
     setTodos((prev) =>
       prev.map((prevTodo) => {
-        // if (todo.todo.trim() == "") return prevTodo;
         return prevTodo.id === id ? todo : prevTodo;
       })
     );
